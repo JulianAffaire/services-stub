@@ -1,0 +1,11 @@
+stubrunner:
+  workOffline: true
+  cloud.stubbed.discovery.enabled: false
+  # artifact ids containing stubs to be downloaded
+  ids: com.myapp.service:services-stub:1.0.0:stubs:8385
+  stubs-mode: local
+  httpServerStubConfigurer: com.myapp.service.WiremockCustomConfiguration
+
+spring:
+  application:
+    name: stubrunner

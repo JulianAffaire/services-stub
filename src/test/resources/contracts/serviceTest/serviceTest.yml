@@ -1,0 +1,26 @@
+---
+name: Stub service 1 - Case 1
+request:
+  url: "/api/service/test/123456"
+  method: GET
+  headers:
+    x-id: 1
+    x-ip: test
+response:
+  status: 200
+  headers:
+    Content-type: application/json
+  bodyFromFile: "reponse/serviceTest-reponse.json"
+
+---
+name: Stub service 1 - Case ERROR
+request:
+  url: "/api/service/test/ERROR"
+  method: GET
+  headers:
+    x-id: 1
+    x-ip: test
+response:
+  status: 404
+  headers:
+    Content-type: application/json
